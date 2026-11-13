@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#1B2632">
+    <title>Aniketh Sodanapalli | Engineering Portfolio</title>
+    <meta name="description" content="Aniketh Sodanapalli’s work in applied AI, business process analysis and circular equipment sales. Explore his education, industrial projects and bachelor’s thesis.">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js')</script>
+  </head>
+  <body>
+    <a href="#home" class="skip">Skip to content</a>
+
+    <div class="bg" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Aniketh Sodanapalli, home"><span class="monogram">AS</span><span class="brand-name">Aniketh Sodanapalli</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Intro</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#thesis">Thesis</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="contact-top" href="mailto:aniketh360@gmail.com">Get in touch <b>↗</b></a>
+    </header>
+
+    <main id="deck" class="deck">
+
+      <!-- 01 · Intro -->
+      <section class="slide" id="home" data-label="Intro">
+        <div class="wrap hero">
+          <div class="intro">
+            <p class="eyebrow reveal">Engineering portfolio · Germany</p>
+            <h1 class="reveal">Aniketh<br>Sodanapalli</h1>
+            <p class="intro-text reveal">I build AI tools for product teams, map how work moves through manufacturing, and explore how industrial equipment can have a second life.</p>
+            <p class="status reveal">M.Sc. Sustainable Management and Technology, TUM (in progress)<br>B.Eng. Business and Engineering, THWS</p>
+            <div class="hero-links reveal">
+              <a class="button" href="#experience">Explore my work <b>→</b></a>
+              <a class="textlink" href="#thesis">Read my thesis <b>↗</b></a>
+            </div>
+          </div>
+          <figure class="portrait glass reveal">
+            <div class="photo">
+              <img src="assets/aniketh.png" alt="Portrait of Aniketh Sodanapalli">
+            </div>
+            <figcaption><span>Business &amp; Engineering</span><span>Germany</span></figcaption>
+          </figure>
+          <div class="pathgrid">
+            <a class="path glass reveal" href="#ai-agents"><span><strong>Applied AI</strong><small>Competitive intelligence</small></span><b>↗</b></a>
+            <a class="path glass reveal" href="#handover"><span><strong>Business processes</strong><small>Manufacturing handovers</small></span><b>↗</b></a>
+            <a class="path glass reveal" href="#reuse"><span><strong>Sustainability</strong><small>Circular equipment sales</small></span><b>↗</b></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 · Experience -->
+      <section class="slide" id="experience" data-label="Experience">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow reveal">Industry</p>
+              <h2 class="reveal">Experience</h2>
+            </div>
+            <p class="reveal">Pick a contract, then open a task to explore the problem, my approach and the outcome.</p>
+          </div>
+          <div class="xp">
+            <div class="rail glass reveal" role="tablist" aria-label="Employers and contracts" aria-orientation="vertical">
+              <p class="rail-head"><small>Semiconductor test equipment · Dresden</small><strong>FormFactor GmbH</strong></p>
+              <button role="tab" id="tab-ws-2026" aria-controls="ws-2026" aria-selected="true"><small>2026 – present</small><span>Working student</span></button>
+              <button role="tab" id="tab-intern-voluntary" aria-controls="intern-voluntary" aria-selected="false" tabindex="-1"><small>Jul – Dec 2025</small><span>Voluntary internship</span></button>
+              <button role="tab" id="tab-intern-mandatory" aria-controls="intern-mandatory" aria-selected="false" tabindex="-1"><small>Dec 2024 – May 2025</small><span>Mandatory internship</span></button>
+              <button role="tab" id="tab-intern-projects" aria-controls="intern-projects" aria-selected="false" tabindex="-1"><small>Across the two internships</small><span>Additional internship projects</span></button>
+              <p class="rail-head"><small>Manufacturing · Schweinfurt</small><strong>Schaeffler AG</strong></p>
+              <button role="tab" id="tab-schaeffler" aria-controls="schaeffler" aria-selected="false" tabindex="-1"><small>Feb – May 2022</small><span>Working student in quality management</span></button>
+            </div>
+
+            <div class="panels reveal">
+              <div class="tabpanel glass" role="tabpanel" id="ws-2026" aria-labelledby="tab-ws-2026">
+                <p class="panel-head"><small>FormFactor GmbH · 2026 – present</small><strong>Working student</strong></p>
+                <details class="task" id="ai-agents" open>
+                  <summary><span>Building a three-agent research assistant</span><i></i></summary>
+                  <dl class="fields">
+                    <div><dt>Problem</dt><dd>Product specialists were searching different websites to answer the same questions about competitors. The evidence for a comparison was often scattered across several pages.</dd></div>
+                    <div><dt>How I tackled it</dt><dd>I built separate agents for MPI, ficonTEC and Eoulu. Each searches for relevant pages, extracts product information and returns a comparison with sources a colleague can check. I tested the responses against those sources.</dd></div>
+                    <div><dt>Tools and methods</dt><dd>Claude API, Tavily, Firecrawl, Railway, Visual Studio Code, Git and GitHub.</dd></div>
+                    <div><dt>Outcome</dt><dd>Three working research prototypes gave the product marketing team a repeatable way to investigate semiconductor test equipment.</dd></div>
+                  </dl>
+                </details>
+                <details class="task" id="copilot">
+                  <summary><span>Moving competitor research into Microsoft Copilot</span><i></i></summary>
+                  <dl class="fields">
+                    <div><dt>Problem</dt><dd>The research assistant needed to work in the Microsoft environment used by the team. Long chat answers also made side-by-side comparisons difficult to scan.</dd></div>
+                    <div><dt>How I tackled it</dt><dd>I rebuilt the MPI agent in Copilot Studio, wrote instructions for web research and checked its answers against supporting sources. I am prototyping Adaptive Cards to organise comparisons inside the chat.</dd></div>
+                    <div><dt>Tools and methods</dt><dd>Microsoft Copilot Studio, Microsoft 365 Copilot, Adaptive Cards, Visual Studio Code, Git and GitHub.</dd></div>
+                    <div><dt>Outcome</dt><dd>The Microsoft agent can answer competitor research questions. The in-chat dashboard is under development.</dd></div>
+                  </dl>
+                </details>
+                <details class="task" id="handover">
+                  <summary><span>Designing a shared manufacturing-to-shipping record</span><i></i></summary>
+                  <dl class="fields">
+                    <div><dt>Problem</dt><dd>Product information passed through several departments before shipment. The next team needed to know which details were ready and who owned missing information.</dd></div>
+                    <div><dt>How I tackled it</dt><dd>I mapped the existing chain from manufacturing to dispatch, identified the data supplied at each step and assigned responsibility for updating it. I then designed a future workflow around one shared product record.</dd></div>
+                    <div><dt>Tools and methods</dt><dd>As-is and to-be process mapping, data requirements, ownership mapping and cross-functional workflow design. My process-mapping toolkit includes draw.io and Miro.</dd></div>
+                    <div><dt>Outcome</dt><dd>A documented handover design showing which team enters each item, where it is stored and who uses it next.</dd></div>
+                  </dl>
+                </details>
+              </div>
+
+              <div class="tabpanel glass" role="tabpanel" id="intern-voluntary" aria-labelledby="tab-intern-voluntary">
+                <p class="panel-head"><small>FormFactor GmbH · Jul – Dec 2025</small><strong>Voluntary internship</strong></p>
+                <details class="task" id="quote" open>
+                  <summary><span>Mapping how a technical request becomes a quotation</span><i></i></summary>
+                  <dl class="fields">
+                    <div><dt>Problem</dt><dd>A customer offer depended on inputs from engineering, service and sales. Approval loops made it difficult to see where an offer was waiting.</dd></div>
+                    <div><dt>How I tackled it</dt><dd>I worked with the Centre of Excellence to trace the quote-to-customer process. I mapped where configuration, cost and delivery inputs came from and where an approval or missing answer could send the offer back.</dd></div>
+                    <div><dt>Tools and methods</dt><dd>Workflow mapping, approval analysis, Salesforce, SAP S/4HANA and Excel.</dd></div>
+                    <div><dt>Outcome</dt><dd>A process structure connecting the customer request, technical checks and commercial offer.</dd></div>
+                  </dl>
+                </details>
+                <a class="crosslink" href="#intern-projects">Explore shared internship projects <b>↗</b></a>
+              </div>
+
+              <div class="tabpanel glass" role="tabpanel" id="intern-mandatory" aria-labelledby="tab-intern-mandatory">
+                <p class="panel-head"><small>FormFactor GmbH · Dec 2024 – May 2025</small><strong>Mandatory internship</strong></p>
+                <details class="task" id="reuse" open>
+                  <summary><span>Evaluating trade-in and buyback offers</span><i></i></summary>
+                  <dl class="fields">
+                    <div><dt>Problem</dt><dd>A used probe station could have several possible configurations. A credible offer depended on what could be reused, what needed replacing and what the customer actually needed.</dd></div>
+                    <div><dt>How I tackled it</dt><dd>I compared the machine configuration with customer requirements, reviewed component alternatives and checked refurbishment costs with engineering and service colleagues before preparing an offer.</dd></div>
+                    <div><dt>Tools and methods</dt><dd>Configuration analysis, refurbishment cost review, Excel, Salesforce and SAP S/4HANA.</dd></div>
+                    <div><dt>Outcome</dt><dd>Technical and commercial inputs were brought together in quotations for refurbished semiconductor test equipment.</dd></div>
+                  </dl>
+                </details>
+                <a class="crosslink" href="#intern-projects">Explore shared internship projects <b>↗</b></a>
+              </div>
+
+              <div class="tabpanel glass" role="tabpanel" id="intern-projects" aria-labelledby="tab-intern-projects">
+                <p class="panel-head"><small>FormFactor GmbH · Across the two internships</small><strong>Additional internship projects</strong></p>
+                <details class="task" id="acting-lead" open>
+                  <summary><span>Covering the refurbished-equipment sales manager</span><i></i></summary>
+                  <dl class="fields">
+                    <div><dt>Problem</dt><dd>During the manager’s absence, customers still needed quotes for used probe stations and optical components.</dd></div>
+                    <div><dt>How I tackled it</dt><dd>I took over day-to-day coordination, checked available systems and lenses, clarified configuration and cost questions with technical colleagues and prepared offers for Sony, Bosch and NVIDIA.</dd></div>
+                    <div><dt>Tools and methods</dt><dd>Excel, Salesforce, SAP S/4HANA, technical configuration review and B2B quotation preparation.</dd></div>
+                    <div><dt>Outcome</dt><dd>I maintained continuity for customer enquiries and produced offers matched to the requested equipment.</dd></div>
+                  </dl>
+                </details>
+                <details class="task" id="cad">
+                  <summary><span>Visualising a 300 mm probe station</span><i></i></summary>
+                  <dl class="fields">
+                    <div><dt>Problem</dt><dd>A shelf concept for the EVOLVITY 300 needed to be understandable before a customer or sales colleague could see the physical configuration.</dd></div>
+                    <div><dt>How I tackled it</dt><dd>I modelled the shelf concept in 3D and created rendered views of the probe station, choosing perspectives that showed how the components fit together.</dd></div>
+                    <div><dt>Tools and methods</dt><dd>SolidWorks for 3D CAD and SolidWorks Visualize for rendering.</dd></div>
+                    <div><dt>Outcome</dt><dd>Presentation-ready product views made a mechanical design easier to explain.</dd></div>
+                  </dl>
+                </details>
+                <details class="task" id="survey">
+                  <summary><span>Analysing customer feedback on 200 mm probe stations</span><i></i></summary>
+                  <dl class="fields">
+                    <div><dt>Problem</dt><dd>Product marketing needed to understand what users valued in general-purpose test equipment.</dd></div>
+                    <div><dt>How I tackled it</dt><dd>I reviewed survey responses about 200 mm probe stations and grouped the requirements that recurred. I also worked on the configuration logic for an S200 promotional package.</dd></div>
+                    <div><dt>Tools and methods</dt><dd>Customer survey analysis, requirements grouping and product configuration analysis.</dd></div>
+                    <div><dt>Outcome</dt><dd>A structured view of customer needs for product and sales discussions.</dd></div>
+                  </dl>
+                </details>
+                <details class="task" id="marketing">
+                  <summary><span>Turning product specifications into sales material</span><i></i></summary>
+                  <dl class="fields">
+                    <div><dt>Problem</dt><dd>Customers and channel partners needed to understand what a feature would let them do in a test application.</dd></div>
+                    <div><dt>How I tackled it</dt><dd>I worked with engineering and applications teams to connect the specification to the use case. I carried those explanations into datasheets, presentations and demonstrations, and supported new product introduction by coordinating beta-site feedback and launch material.</dd></div>
+                    <div><dt>Tools and methods</dt><dd>PowerPoint, technical datasheets, application notes, product demonstrations and new product introduction (NPI).</dd></div>
+                    <div><dt>Outcome</dt><dd>Sales teams had reusable explanations for pre-sales conversations and product launches.</dd></div>
+                  </dl>
+                </details>
+              </div>
+
+              <div class="tabpanel glass" role="tabpanel" id="schaeffler" aria-labelledby="tab-schaeffler">
+                <p class="panel-head"><small>Schaeffler AG · Feb – May 2022</small><strong>Working student in quality management</strong></p>
+                <details class="task" id="quality" open>
+                  <summary><span>Investigating production and quality deviations</span><i></i></summary>
+                  <dl class="fields">
+                    <div><dt>Problem</dt><dd>A change in a quality indicator flags a problem but does not explain what caused it.</dd></div>
+                    <div><dt>How I tackled it</dt><dd>I reviewed production and quality KPIs, identified deviations for follow-up and supported the team’s root-cause investigations. I documented the findings for internal reviews and audit preparation.</dd></div>
+                    <div><dt>Tools and methods</dt><dd>KPI analysis, root-cause analysis, production reporting and audit documentation.</dd></div>
+                    <div><dt>Outcome</dt><dd>The team had documented observations and investigation findings to use in its internal reviews.</dd></div>
+                  </dl>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 · Education -->
+      <section class="slide" id="education" data-label="Education">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow reveal">Academic background</p>
+              <h2 class="reveal">Education</h2>
+            </div>
+            <p class="reveal">Two degrees connecting the engineering of industrial products with the decisions behind them.</p>
+          </div>
+          <div class="degrees">
+            <article class="degree glass reveal" id="tum">
+              <header>
+                <span class="badge">M.Sc. · In progress</span>
+                <span class="when">Oct 2026 – present</span>
+              </header>
+              <h3>Sustainable Management and Technology</h3>
+              <p class="school">Technical University of Munich · Campus Straubing</p>
+              <p class="lede">My work connects corporate sustainability decisions to the engineering and economics behind them.</p>
+              <div class="subjects">
+                <div><h4>Applied coursework</h4><p>For a Holcim case study, I used the company’s sustainability statement to map eight stakeholder groups against five issues, including climate action, human rights and the circular economy.</p></div>
+                <div><h4>Research and management</h4><p>The programme includes pathways in empirical research, operations research, sustainable production, logistics and supply chain management.</p></div>
+                <div><h4>Sustainability and technology</h4><p>Curriculum options cover life cycle assessment, circular economy and corporate sustainability alongside engineering topics such as renewable energy, biobased materials and energy-system modelling.</p></div>
+              </div>
+              <p class="note">The degree is in progress. Curriculum options describe the programme’s scope.</p>
+            </article>
+            <article class="degree glass reveal" id="thws">
+              <header>
+                <span class="badge">B.Eng. · Completed</span>
+                <span class="when">Oct 2021 – Mar 2026</span>
+              </header>
+              <h3>Business and Engineering</h3>
+              <p class="school">Technical University of Applied Sciences Würzburg-Schweinfurt</p>
+              <div class="subjects">
+                <div><h4>Engineering and design</h4><p>Mechanics, electrical engineering, mechatronics and product development. I led a team project to design a butter-portioning device in SolidWorks and test the design with a 3D-printed prototype.</p></div>
+                <div><h4>Business and operations</h4><p>Economics, accounting, human resource management, business processes and applied project management. A B2B marketing project covered market entry, customer segments and distribution partners.</p></div>
+                <div><h4>Data and information systems</h4><p>Mathematics, statistics, data analysis, empirical research methods and programming for engineers, alongside the role of ERP and CRM systems in business operations.</p></div>
+                <div><h4>Bachelor’s thesis</h4><p>I brought the commercial and technical sides of the degree together in a study of trade-in and buyback strategies for refurbished capital equipment.</p></div>
+              </div>
+              <a class="crosslink" href="#thesis">Read the thesis case study <b>↗</b></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 · Thesis -->
+      <section class="slide" id="thesis" data-label="Thesis">
+        <div class="wrap">
+          <div class="thesis">
+            <div class="thesis-side glass reveal">
+              <p class="eyebrow">Bachelor’s thesis</p>
+              <div class="wafer" aria-hidden="true"></div>
+              <small>THWS · B.Eng. · 2026</small>
+            </div>
+            <div class="thesis-copy">
+              <h2 class="reveal">Business Models for Refurbished Capital Equipment</h2>
+              <p class="subhead reveal">A Study of Trade-In and Buyback Strategies</p>
+              <p class="lede reveal">When a semiconductor test system leaves its first owner, it can still have value for the next one. I studied how a supplier can recover that value, and what would make an equipment owner willing to participate.</p>
+              <div class="findings">
+                <div class="finding glass reveal"><h4>Focus</h4><p>I compared trade-in, where the owner receives credit towards another purchase, with buyback, where the supplier purchases the used asset separately. I focused on customer purchasing behaviour, commercial feasibility and equipment reuse in a B2B market.</p></div>
+                <div class="finding glass reveal"><h4>Approach</h4><p>I used qualitative expert interviews and thematic analysis to connect industry experience with the literature. Customer journey mapping helped me examine where an owner decides whether to return equipment. PESTEL and circular-economy frameworks placed that decision in its wider market context.</p></div>
+                <div class="finding glass reveal"><h4>Outcome</h4><p>The thesis brought the two models into a practical comparison. A trade-in ties equipment recovery to the customer’s next purchase. A buyback can recover equipment even when the owner is not replacing it. I used that distinction to explain how customer timing, configuration and refurbishment cost shape the choice.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 · Contact -->
+      <section class="slide" id="contact" data-label="Contact">
+        <div class="wrap foot">
+          <div class="foot-main">
+            <p class="eyebrow reveal">Contact</p>
+            <h2 class="reveal">Get in touch.</h2>
+            <p class="lede reveal">Open to roles in sustainability, business process analysis and applied AI across Germany.</p>
+            <div class="foot-links reveal">
+              <a class="button" href="mailto:aniketh360@gmail.com">aniketh360@gmail.com <b>↗</b></a>
+              <a class="textlink" href="https://www.linkedin.com/in/aniketh-chakravarthy-sodanapalli-04b8181a0/" target="_blank" rel="noopener">LinkedIn <b>↗</b></a>
+            </div>
+          </div>
+          <div class="cvs">
+            <p class="eyebrow reveal">Download my CV</p>
+            <a class="cv glass reveal" href="assets/Aniketh_Sodanapalli_AI.pdf" download><strong>AI solutions</strong><span class="pdf">PDF ↓</span></a>
+            <a class="cv glass reveal" href="assets/Aniketh_Sodanapalli_Business_Process.pdf" download><strong>Business and process analysis</strong><span class="pdf">PDF ↓</span></a>
+            <a class="cv glass reveal" href="assets/Aniketh_Sodanapalli_Sustainability.pdf" download><strong>Sustainability</strong><span class="pdf">PDF ↓</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="hud" aria-label="Slide controls">
+      <button class="hud-btn" id="prev" aria-label="Previous slide">←</button>
+      <div class="hud-mid">
+        <span class="count"><b id="cur">01</b><span> / </span><span id="tot">05</span></span>
+        <span class="bar"><span id="barfill"></span></span>
+        <span class="label" id="label">Intro</span>
+      </div>
+      <button class="hud-btn" id="next" aria-label="Next slide">→</button>
+    </div>
+
+    <script src="navigation.js"></script>
+  </body>
+</html>
